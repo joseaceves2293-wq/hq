@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+  <meta name="theme-color" content="#14100d" />
+  <meta name="description" content="HQ: a top-down pixel office for Joe's dropshipping bot team. Pipeline, tasks and Round Table meetings." />
+  <title>HQ · dropship office</title>
+  <link rel="icon" href="./icon-192.png" type="image/png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="HQ" />
+  <style>html,body{background:#0d0a09;margin:0}#splash{z-index:100;color:#f3e9dc;background:#0d0a09;place-items:center;font:500 13px/1.4 system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;transition:opacity .4s;display:grid;position:fixed;top:0;bottom:0;left:0;right:0}#splash.gone{opacity:0;pointer-events:none}#splash .m{justify-items:center;gap:14px;display:grid}#splash .logo{width:64px;height:64px;image-rendering:pixelated}#splash .bar{background:#2a221d;width:120px;height:6px;position:relative;overflow:hidden}#splash .bar i{background:#f5a524;width:40%;animation:1s steps(6,end) infinite ld;position:absolute;top:0;bottom:0;left:0;right:0}@keyframes ld{0%{transform:translate(-100%)}to{transform:translate(250%)}}</style>
+  <script type="module" crossorigin src="./assets/index-DZXoA6FR.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-9l66iNGj.css">
+</head>
+<body>
+  <div id="splash" role="status" aria-label="Loading"><div class="m"><img class="logo" src="./icon-192.png" alt="" /><div class="bar"><i></i></div><span>Clocking in…</span></div></div>
+  <div id="app">
+    <header class="top">
+      <div class="brand"><img src="./icon-192.png" alt="" class="mark" /><div><h1>HQ</h1><p id="sub"></p></div></div>
+      <nav id="tabs" class="tabs" aria-label="Sections"></nav>
+      <button id="recenter" class="icon-btn" aria-label="Recenter office"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" x2="5" y1="12" y2="12"/><line x1="19" x2="22" y1="12" y2="12"/><line x1="12" x2="12" y1="2" y2="5"/><line x1="12" x2="12" y1="19" y2="22"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </header>
+    <main class="stage">
+      <canvas id="office" aria-label="Office floor. Tap a bot to open its desk."></canvas>
+      <div class="hud"><button id="zout" class="icon-btn" aria-label="Zoom out">−</button><button id="zin" class="icon-btn" aria-label="Zoom in">+</button></div>
+      <aside id="drawer" class="drawer" aria-hidden="true" aria-live="polite"></aside>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="tour" class="tour" hidden><div class="ring" hidden></div><div class="tcard"></div></div>
+</body>
+</html>
