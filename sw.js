@@ -1,7 +1,7 @@
-const SHELL = 'hq-20261116020853-shell';
-const DATA = 'hq-20261116020853-data';
-const PRECACHE = ["./","./apple-touch-icon.png","./assets/index-9l66iNGj.css","./assets/index-DZXoA6FR.js","./assets/inter-latin-400-normal-C38fXH4l.woff2","./assets/inter-latin-500-normal-Cerq10X2.woff2","./assets/inter-latin-600-normal-LgqL8muc.woff2","./assets/silkscreen-latin-400-normal-CtPo2yA5.woff2","./assets/silkscreen-latin-700-normal-CSE2nhgM.woff2","./icon-192.png","./icon-512-maskable.png","./icon-512.png","./index.html","./manifest.webmanifest"];
-const DATA_FILES = [];
+const SHELL = 'hq-20261116041935-shell';
+const DATA = 'hq-20261116041935-data';
+const PRECACHE = ["./","./apple-touch-icon.png","./assets/index-BBzj7JuD.js","./assets/index-DcE2Vfg6.css","./assets/inter-latin-400-normal-C38fXH4l.woff2","./assets/inter-latin-500-normal-Cerq10X2.woff2","./assets/inter-latin-600-normal-LgqL8muc.woff2","./assets/silkscreen-latin-400-normal-CtPo2yA5.woff2","./assets/silkscreen-latin-700-normal-CSE2nhgM.woff2","./icon-192.png","./icon-512-maskable.png","./icon-512.png","./index.html","./manifest.webmanifest"];
+const DATA_FILES = ["relay.json"];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(SHELL).then(c => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
